@@ -11,7 +11,7 @@ s_sock.setsockopt(SOL_SOCKET, SO_REUSEADDR, 1)
 s_sock.bind( s_addr )
 
 data, c_addr = s_sock.recvfrom(1024)
-
+   
 while True:
     if data.decode('utf-8') == 'q':
         break

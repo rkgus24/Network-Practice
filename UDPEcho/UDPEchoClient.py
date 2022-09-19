@@ -9,7 +9,7 @@ c_sock = socket(AF_INET, SOCK_DGRAM)
 indata = input('전송할 문자열 입력 : ')
 
 c_sock.sendto(indata.encode('utf-8'), s_addr)
-
+   
 while True:
     if indata == 'q':
         break
