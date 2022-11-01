@@ -75,7 +75,7 @@
 			<td><%=week %></td>
 			<td><%=start %></td>
 			<td><%=end %></td>
-			<td><a href="action.jsp?id=<%=rs.getString(1) %>&mode=delete">삭제</a></td>
+			<td><a href="action.jsp?id=<%=rs.getString(1)%>&mode=delete">삭제</a></td>
 			</tr>
 			<%
 				}
