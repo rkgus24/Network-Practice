@@ -26,7 +26,7 @@
 				try {
 					Class.forName("oracle.jdbc.OracleDriver");
 					Connection con = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/xe", "system", "1234");
-					String sql = "SELECT tc.regist_month, tm.c_no, tm.c_name, tt.class_name, tc.class_area, tc.tuition, tm.grade FROM TBL_TEACHER_202201 tt, TBL_MEMBER_202201 tm, TBL_CLASS_202201 tc WHERE tm.c_no = tc.c_no AND tc.teacher_code  = tt.teacher_code";
+					String sql = "SELECT tc.regist_month, tm.c_no, tm.c_name, tt.class_name, tc.class_area, tc.tution, tm.grade FROM TBL_TEACHER_202201 tt, TBL_MEMBER_202201 tm, TBL_CLASS_202201 tc WHERE tm.c_no = tc.c_no AND tc.teacher_code  = tt.teacher_code";
 					PreparedStatement pstmt = con.prepareStatement(sql);
 					ResultSet rs = pstmt.executeQuery();
 					while(rs.next()){
