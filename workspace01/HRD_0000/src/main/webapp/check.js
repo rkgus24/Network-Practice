@@ -18,7 +18,7 @@ function checking(){
 		return false
 	} 
 	alert("수강신청이 정상적으로 완료되었습니다!")
-	document.frm.sumbit()
+	document.frm.submit()
 	return true
 }
 
